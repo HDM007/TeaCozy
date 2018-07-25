@@ -17,6 +17,7 @@ header{
   border-bottom: 1px solid seashell;
   align-items: center;
   text-align: center;
+  background-color: black;
 }
 
 nav{
@@ -56,6 +57,10 @@ nav a{
 
 /*Mission Section - Setup as a FlexBox with a background image. */
 
+div {
+  /*border: 3px solid red;*/
+}
+
 #mission{
   display: flex;
   height: 700px;
@@ -65,11 +70,86 @@ nav a{
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 5px solid red;
 }
 
 #mission .content{
   width: 100%;
   background-color: black;
   opacity: 0.9;
+}
+
+/* Monthly Teas - covers the monthly flex container, containing the content and specials containers - and the specials container contains 5 'special' containers, each dedicated to a special. */
+
+#monthly{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 1000px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#monthly .content{
+  background-color: black;
+  width: 100%;
+}
+
+.specials{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.special{
+  padding: 5px;
+}
+
+.special img{
+  height: 200px;
+  margin: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.special span{
+  font-weight: bold;
+}
+
+#locations{
+  height: 500px;
+  width: 1200px;
+  background-image: url("../Images/img-locations-background.jpg");
+  padding-top: 50px;
+}
+
+#locations h2{
+  display: block;
+  padding: 10px;
+}
+
+
+div.location-row{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.location-box{
+  flex-basis: 280px;
+  background-color: black;
+  margin:: 5px 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact{
+  height: 200px;
+}
+
+footer{
+  width: 100%;
+  text-align: left;
+  font-weight: normal;
 }
